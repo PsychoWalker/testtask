@@ -5,23 +5,28 @@ body {
 }
 
 body {
-	width: 100%;
+	margin: 0 auto;
 }
 
 /*UTILS*/
 @font-face {
-    font-family: Gotham Pro Medium; /* Имя шрифта */
-    src: url(../fonts/GothaProMed.otf); /* Путь к файлу со шрифтом */
-   }
+	font-family: Gotham Pro Medium; /* Имя шрифта */
+	src: url(../fonts/GothaProMed.otf); /* Путь к файлу со шрифтом */
+}
 @font-face {
-    font-family: Gotham Pro Regular; /* Имя шрифта */
-    src: url(../fonts/GothaProMed.otf); /* Путь к файлу со шрифтом */
-   }
+	font-family: Gotham Pro Regular; /* Имя шрифта */
+	src: url(../fonts/GothaProMed.otf); /* Путь к файлу со шрифтом */
+}
 
 .clearfix:after {
 	content: '';
 	display: table;
 	clear: both;
+}
+
+.wrapper {
+	width: 1560px;
+	margin: 0 auto;
 }
 
 /*HEADER*/
@@ -30,6 +35,7 @@ body {
 	height: 100%;
 	position: fixed;
 	background-color: #f6f6f6;
+	z-index:20;
 }
 
 .logo,
@@ -68,15 +74,12 @@ body {
 
 
 /*MAIN CONTENT*/
-.main-content {
-	width: 100%;
-}
 
 .content-header {
 	background: #a7d8f5 url(../img/background-up.jpg) no-repeat;
 	background-size: cover;
-	min-width: 500px;
-	height: 653px;
+	width: 1560px;
+	height: 647px;
 }
 
 .gallery-content {
@@ -86,29 +89,202 @@ body {
 .gallery-info {
 	background: #fff url(../img/background-gallery-content.jpg) no-repeat;
 	background-size: cover;
-	width: 60%;
-	min-width: 20%;
+	width: 825px;
 	float: left;
 	height: 717px;
 }
 
 .gallery-photo {
-	float: right;
+	float: left;
+	margin-top: 30px;
+	margin-left: 30px; 
 	background-color: #fff;
-	width: 40%;
+	width: 655px;
+	height: 659px;
+	background: #fff url(../img/link-for-gallery.jpg) no-repeat;
+	background-size: cover;
+	
+}
 
-	min-width: 10%;
+.prize-content {
 	height: 717px;
+	width: 100%;
+	position: relative;
 }
 
-.container {
-	margin: 25px;
+.prize {
+	position: absolute;
+	width: 825px;
+	float: left;
+	margin-left: 51px;
+	height: 717px;
+	background: url(../img/background-lays.png) no-repeat;
+	background-size: cover;
+	z-index: 2;
 }
 
-.photo-container {
+.balloon {
+	z-index: 0;
+	float: right;
+	width: 735px;
+	height: 717px;
+	background: #fff url(../img/image-1.jpg) no-repeat;
+	background-size: cover;
+	margin-left: -20px;
+}
+
+.summer-lays {
+	position: relative;
+}
+
+.summer {
+	position: absolute;
+	width: 787px;
+	float: right;
+	right: 0;
+	height: 717px;
+	background: url(../img/background-lays-yellow.png) no-repeat;
+	background-size: cover;
+	z-index: 2;
+}
+
+.beach {
+	margin-left: 90px;
+	z-index: 0;
+	float: left;
+	width: 735px;
+	height: 717px;
+	background: #fff url(../img/party-lays.jpg) no-repeat;
+	background-size: cover;
+}
+
+/*FOOTER*/
+
+.main-footer {
+	width: 100%;
+	height: 100px;
+	background-color: #3c3c3c;
+}
+
+.copypast {
 	display: inline-block;
-	min-width: 214px;
-	min-height: 214px;
-	background-color: grey;
-	margin: 5px;
+	vertical-align: bottom;
+	color: #fff;
+	margin-bottom: 22px;
+	opacity: 0.7;
+}
+
+.logo-footer {
+	float: left;
+	margin-left: 215px;
+	margin-top: 22px;
+}
+
+.logo-footer a {
+	margin-right: 10px;
+}
+
+.social {
+	float:right;
+	font-size: 0px;
+}
+
+.social-item {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.social-item:nth-child(1) {
+	background-color: #326aa2;
+}
+
+.social-item:nth-child(2) {
+	background-color: #3378a8;
+}
+
+.social-item:nth-child(3) {
+	background-color: #edbf11;
+}
+
+.social-item:nth-child(4) {
+	background-color: #c4070d;
+}
+
+@media screen and (max-width: 1400px) {
+	.wrapper {
+		width: 1400px;
+	}
+
+	.content-header {
+	width: 1400px;
+	height: 583px;
+}
+
+.gallery-content {
+	height: 639px;
+}
+
+.gallery-info {
+	width: 775px;
+	height: 640px;
+
+}
+
+.gallery-photo {
+	width: 580px;
+	height: 580px;
+	margin-left: 25px;
+	margin-top: 25px;
+	
+}
+
+.prize-content {
+	height: 636px;
+}
+
+.prize {
+	width: 775px;
+	margin-left: 48px;
+	height: 636px;
+}
+
+.balloon {
+	width: 626px;
+	height: 636px;
+}
+
+.summer {
+	width: 669px;
+	height: 636px;
+}
+
+.beach {
+	margin-left: 90px;
+	width: 685px;
+	height: 636px;
+}
+
+/*FOOTER*/
+
+.main-footer {
+	height: 89px;
+}
+
+.logo-footer {
+	margin-top: 15px;
+}
+
+.logo-footer a {
+	margin-right: 10px;
+}
+
+.social-item {
+	width: 89px;
+	height: 89px;
+}
+
+
 }
