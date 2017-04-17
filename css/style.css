@@ -18,6 +18,17 @@ body {
 	src: url(../fonts/GothaProMed.otf); /* Путь к файлу со шрифтом */
 }
 
+@font-face {
+	font-family: Gotham Pro Bold; /* Имя шрифта */
+	src: url(../fonts/GothaProBol.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+	font-family: Gotham Pro Lig; /* Имя шрифта */
+	src: url(../fonts/GothaProLig.otf); /* Путь к файлу со шрифтом */
+}
+
+
 .clearfix:after {
 	content: '';
 	display: table;
@@ -42,12 +53,15 @@ body {
 .menu {
 	cursor: pointer;
 	width: 100%;
-	height: 100px;
 	position: relative;
 	text-align: center;
 	font-size: 14px;
 	color: #555;
 	height: 113px;
+}
+
+.mobile-menu {
+	display: none;
 }
 
 .logo {
@@ -79,12 +93,90 @@ body {
 	background: #a7d8f5 url(../img/background-up.jpg) no-repeat;
 	background-size: cover;
 	width: 1560px;
-	height: 647px;
+	height: 654px;
+	position: relative;	
+}
+
+.content-header-p {
+	text-align: center;
+	font-size: 18px;
+	color: #301f20;
 }
 
 .gallery-content {
 	height: 717px;
 }
+
+.hashtag {
+	width: 700px;
+	height: 430px;
+	left: 229px;
+	top: 343px;
+	position: absolute;
+}
+
+.summer-bold {
+	font-family: Gotham Pro Bold, Arial, sans-serif;
+	font-size: 100px;
+	line-height: 100px;
+	color: #f73934;
+	letter-spacing: 0.03em;
+
+}
+
+.summer-light {
+	font-family: Gotham Pro Lig, Arial, sans-serif;
+	font-size: 58px;
+	line-height: 40px;
+	color: #f73934;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+
+.content-menu {
+	width: 525px;
+	height: 230px;
+	left: 250px;
+	top: 75px;
+	position: absolute;
+}
+
+.item {
+	width: 150px;
+	height: 230px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 32px;
+}
+
+.item:last-child {
+	margin-right: 0;
+}
+
+.image-link {
+	width: 125px;
+	height: 125px;
+	background-color: #fff;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+.image-link a {
+	margin: 25%;
+}
+
+.image-photo {
+	padding-top: 30px;
+}
+
+.image-heart {
+	padding-top: 35px;
+}
+
+.image-prize {
+	padding-top: 24px;
+}
+
 
 .gallery-info {
 	background: #fff url(../img/background-gallery-content.jpg) no-repeat;
@@ -92,6 +184,55 @@ body {
 	width: 825px;
 	float: left;
 	height: 717px;
+	margin-left: 28px;
+}
+
+.gallery-text {
+	width:301px;
+	margin-left: 218px;
+	margin-top: 281px;
+}
+
+.gallery-info a{
+	display: block;
+	margin-left: 210px;
+	margin-top: 39px;
+	letter-spacing: 0.04em;
+	font-family: Gotham Pro Medium, Arial, sans-serif;
+	font-size: 25px;
+	color: #fff;
+	border: 3px solid #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 19px 60px;
+	width: 124px;
+}
+
+.gallery-info a:hover {
+	background: #000;
+	opacity: 0.4;
+}
+
+.laystag {
+	background-color: #fff;
+	color: #f73934;
+	font-family: Gotham Pro Regular, Arial, sans-serif;
+	font-size: 45px;
+	line-height: 55px;
+	height: 58px;
+	width: 276px;
+	margin-left: -7px;
+	padding-left: 7px;
+	padding-top: 3px;
+}
+
+.load-lays {
+	font-family: Gotham Pro Bold, Arial, sans-serif;
+	font-size: 45px;
+	line-height: 55px;
+	color: #000;
+	font-stretch: extra-condensed;
+	margin-bottom: 6px;
 }
 
 .gallery-photo {
@@ -116,11 +257,67 @@ body {
 	position: absolute;
 	width: 825px;
 	float: left;
-	margin-left: 51px;
+	margin-left: 79px;
 	height: 717px;
 	background: url(../img/background-lays.png) no-repeat;
 	background-size: cover;
 	z-index: 2;
+}
+
+.block-lays {
+	margin-left: 100px;
+	margin-top: 103px;
+}
+
+.img-lays {
+	float: left;
+	margin-left: 18px;
+}
+
+.img-lays-mobile {
+	display: none;
+}
+
+.prize-lays {
+	float: left;
+	font-family: Gotham Pro Bold, Arial, sans-serif;
+	font-size: 61px;
+	line-height: 65px;
+	color: #fff;
+	width: 280px;
+	height: 230px;
+	margin-left: 7px;
+	margin-top: 63px;
+}
+
+.prize p {
+	font-family: Gotham Pro Regular, Arial, sans-serif;
+	font-size: 20px;
+	line-height: 28px;
+	color: #fff;
+	width: 500px;
+	margin-left: 160px;
+	padding-top: 13px;]
+}
+
+.prize a{
+	display: block;
+	margin-left: 160px;
+	margin-top: 46px;
+	letter-spacing: 0.04em;
+	font-family: Gotham Pro Medium, Arial, sans-serif;
+	font-size: 25px;
+	color: #fff;
+	border: 3px solid #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 19px 40px;
+	width: 163px;
+}
+
+.prize a:hover {
+	background: #000;
+	opacity: 0.4;
 }
 
 .balloon {
@@ -128,9 +325,22 @@ body {
 	float: right;
 	width: 735px;
 	height: 717px;
-	background: #fff url(../img/image-1.jpg) no-repeat;
-	background-size: cover;
 	margin-left: -20px;
+	overflow: hidden;
+}
+
+
+
+.balloon-image {
+	transition: transform 2s;
+	width: 735px;
+	height: 717px;
+	background: #fff url(../img/image-1.jpg) no-repeat 100% 50%;
+	background-size: auto;
+}
+
+.animate-in {
+	transform: scale(1.1);
 }
 
 .summer-lays {
@@ -139,19 +349,61 @@ body {
 
 .summer {
 	position: absolute;
-	width: 787px;
+	width: 756px;
 	float: right;
 	right: 0;
 	height: 717px;
 	background: url(../img/background-lays-yellow.png) no-repeat;
 	background-size: cover;
 	z-index: 2;
+
+}
+
+.summer-content {
+	margin-left: 82px;
+	margin-top: 73px;
+}
+
+.summer-content h2 {
+	font-family: Gotham Pro Bold, Arial, sans-serif;
+	font-size: 67px;
+	line-height: 81px;
+	color: #301f20;
+	padding-left: 109px;
+	margin-top: 10px;
+}
+
+.summer-content a {
+	display: block;
+	margin-left: 196px;
+	margin-top: -21px;
+	letter-spacing: 0.04em;
+	font-family: Gotham Pro Medium, Arial, sans-serif;
+	font-size: 25px;
+	color: #fff;
+	border: 3px solid #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 19px 57px;
+	width: 129px;
+}
+
+.summer-content a:hover {
+	background: #000;
+	opacity: 0.4;
 }
 
 .beach {
-	margin-left: 90px;
+	margin-left: 128px;
 	z-index: 0;
 	float: left;
+	width: 735px;
+	height: 717px;
+	overflow: hidden;
+}
+
+.beach-image {
+	transition: transform 3s;
 	width: 735px;
 	height: 717px;
 	background: #fff url(../img/party-lays.jpg) no-repeat;
@@ -172,6 +424,10 @@ body {
 	color: #fff;
 	margin-bottom: 22px;
 	opacity: 0.7;
+}
+
+.copypast-mobile {
+	display: none;
 }
 
 .logo-footer {
@@ -195,6 +451,11 @@ body {
 	display: inline-block;
 	margin-left: 0px;
 	margin-right: 0px;
+	opacity: 0.8;
+}
+
+.social-item:hover {
+	opacity: 1;
 }
 
 .social-item:nth-child(1) {
@@ -219,72 +480,584 @@ body {
 	}
 
 	.content-header {
-	width: 1400px;
-	height: 583px;
+		width: 1400px;
+		height: 580px;
+	}
+
+	.content-menu {
+		width: 460px;
+		height: 190px;
+		left: 240px;
+		top: 67px;
+	}
+
+	.hashtag {
+		left: 222px;
+		top: 304px;
+	}
+
+	.summer-bold {
+		font-size: 86px;
+		line-height: 90px;
+		letter-spacing: 0.04em;
+
+	}
+
+	.summer-light {
+		font-size: 48px;
+		line-height: 40px;
+		letter-spacing: 0.05em;
+	}
+
+	.item {
+		width: 129px;
+		height: 190px;
+		margin-right: 31px;
+	}
+
+	.image-link {
+		width: 110px;
+		height: 110px;
+	}
+
+	.image-photo {
+		padding-top: 27px;
+		width: 52px;
+		height: 53px;
+	}
+
+	.image-heart {
+		padding-top: 32px;
+		width: 58px;
+		height: 55px;
+	}
+
+	.image-prize {
+		padding-top: 21px;
+		width: 58px;
+		height: 60px;
+	}
+
+	.gallery-content {
+		height: 639px;
+	}
+
+	.gallery-info {
+		width: 739px;
+		margin-left: 36px;
+		height: 640px;
+
+	}
+
+	.gallery-photo {
+		width: 580px;
+		height: 580px;
+		margin-left: 25px;
+		margin-top: 25px;
+
+	}
+
+	.gallery-text {
+		width:301px;
+		margin-left: 200px;
+		margin-top: 245px;
+	}
+
+	.gallery-info a{
+		margin-left: 192px;
+		margin-top: 33px;
+		font-size: 22px;
+		padding: 16px 51px;
+		width: 112px;
+	}
+
+	.laystag {
+		font-size: 39px;
+		line-height: 32px;
+		height: 43px;
+		width: 245px;
+		margin-left: -7px;
+		padding-left: 7px;
+		padding-top: 9px;
+	}
+
+	.load-lays {
+		font-size: 39px;
+		line-height: 53px;
+		margin-bottom: 0px;
+	}
+
+	.block-lays {
+		margin-top: 85px;
+	}
+
+	.prize-content {
+		height: 636px;
+	}
+
+	.prize {
+		width: 775px;
+		margin-left: 48px;
+		height: 636px;
+	}
+
+	.prize p {
+		font-family: Gotham Pro Lig, Arial, sans-serif;
+		font-size: 18px;
+		line-height: 22px;
+		width: 450px;
+		margin-left: 181px;
+		padding-top: 0px;
+	}
+
+	.prize a {
+		width: 156px;
+		padding: 15px 30px;
+		font-size: 24px;
+		margin-left: 180px;
+		margin-top: 40px;
+	}
+
+	.prize-lays {
+		font-size: 53px;
+		line-height: 59px;
+		width: 250px;
+	}
+
+	.img-lays {
+		margin-left: 43px;
+		margin-top: 5px;
+	}
+
+	.img-lays > img {
+		width: 243px;
+		height: 268px;
+	}
+
+	.balloon {
+		width: 626px;
+		height: 636px;
+		background: #fff url(../img/image-1.jpg) no-repeat 91% 56%;
+	}
+
+	.summer {
+		width: 669px;
+		height: 636px;
+	}
+
+	.summer-content {
+		margin-left: 66px;
+		margin-top: 63px;
+	}
+
+	.summer-content > img{
+		width: 563px;
+		height: 339px;
+	}
+
+	.summer-content h2 {
+		font-size: 60px;
+		line-height: 72px;
+		margin-top: 9px;
+	}
+
+	.summer-content a {
+		margin-left: 181px;
+		font-size: 22px;
+		padding: 17px 52px;
+		width: 110px;
+
+	}
+
+	.beach {
+		margin-left: 90px;
+		width: 685px;
+		height: 636px;
+	}
+
+	/*FOOTER*/
+
+	.main-footer {
+		height: 89px;
+	}
+
+	.logo-footer {
+		margin-top: 14px;
+		margin-left: 176px;
+	}
+
+	.logo-footer a {
+		margin-right: 6px;
+	}
+
+	.logo-footer img {
+		width: 58px;
+		height: 53px;
+	}
+
+	.copypast {
+		font-family: Gotham Pro Lig, Arial, sans-serif;
+		font-size: 12px;
+		line-height: 22px;
+		margin-top: 19px;
+	}
+
+	.social-item,
+	.social-item img{
+		width: 89px;
+		height: 89px;
+	}
+
+
 }
 
-.gallery-content {
-	height: 639px;
-}
 
-.gallery-info {
-	width: 775px;
-	height: 640px;
-
-}
-
-.gallery-photo {
-	width: 580px;
-	height: 580px;
-	margin-left: 25px;
-	margin-top: 25px;
+@media screen and (max-width: 640px) {
 	
+	.wrapper {
+		width: 640px;
+		margin: 0 auto;
+	}
+
+	/*HEADER*/
+	.main-header {
+		width: 640px;
+		height: 160px;
+		position: relative;
+	}
+
+
+
+
+	.mobile-menu {
+		display: none;
+		width: 65px;
+		height: 51px;
+		border: none;
+		line-height: 1.7em;
+		margin-left: 47px;
+		cursor: pointer;
+	}
+
+	.mobile-menu-label {
+		cursor: pointer;
+		width: 65px;
+		height: 51px;
+	}
+
+	.mobile-menu-label::before {
+		content: "";
+		display: inline-block;
+		position: relative;
+		top: -23px;
+		left: 47px;
+		width: 65px;
+		height: 51px;
+		background: transparent url(../img/mobile/mobile-menu.png) 0 0 no-repeat;
+	}
+
+	.infolays {
+		margin: 0;
+	}
+
+	.menu {
+		width: 640px;
+		background-color: #fff;
+		top: -27px;
+		cursor: pointer;
+		display: none;
+		height: 80px;
+	}
+
+	.menu a {
+		float: left;
+		padding-left: 20px;
+	}
+
+	.menu p {
+		text-align: center;
+		padding-top: 35px;
+		margin: 0;
+		border-top: 1px solid grey;
+	}
+
+	.menu img {
+		padding-top: 20px;
+	}
+
+
+
+
+	.mobile-menu:checked ~ .menu {
+		display: block;
+	}
+
+
+
+	.logo {
+		display: inline-block;
+		height: 160px;
+		font-size: 40px;
+		line-height: 40px;
+		padding-top: 27px;
+		padding-left: 15px;
+		width: 460px;
+	}
+
+	.logo img {
+		width: 110px;
+		height: 100px;
+	}
+
+
+	.logo p {
+		display: inline-block;
+		vertical-align: top;	
+		padding-left: 51px;
+		margin-top: 27px;
+	}
+
+	/*MAIN CONTENT*/
+
+	.content-header {
+		background: #7db8e0 url(../img/mobile/background-mobile.png) no-repeat 100% 100%;
+		background-size: cover;
+		width: 640px;
+		height: 1112px;
+	}
+
+	.hashtag {
+		left: 196px;
+		top: 40px;
+		width: 400px;
+	}
+
+	.content-menu {
+		width: 580px;
+		left: 60px;
+		top: 288px;
+	}
+
+	.item {
+		margin-right: 54px;
+	}
+
+
+
+	.image-link {
+		width: 133px;
+		height: 133px;
+	}
+
+	.image-photo {
+		padding-top: 32px;
+		padding-left: 5px;
+		width: 59px;
+		height: 62px;
+	}
+
+	.image-heart {
+		padding-top: 41px;
+		width: 67px;
+		height: 62px;
+	}
+
+	.image-prize {
+		padding-top: 29px;
+		width: 63px;
+		height: 68px;
+		padding-left: 3px;
+	}
+
+
+
+	.gallery-content {
+		height: 1265px;
+		margin-top: 10px;
+	}
+
+	.gallery-info {
+		background: #fff url(../img/mobile/mobile-social.jpg) no-repeat 68% 100%;
+		background-size: auto;
+		width: 640px;
+		float: none;
+		height: 641px;
+		margin-left: 0;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.gallery-info a {
+		margin-left: -17px;
+		display: inline-block;
+	}
+
+	.gallery-text {
+		margin-top: 0px;
+		padding-top: 290px;
+		margin-left: 71px;
+		display: inline-block;
+		margin-right: 0px;
+	}
+
+	.load-lays {
+		margin-top: 0px;
+	}
+
+	.gallery-photo {
+		float: none;
+		width: 580px;
+		height: 580px;
+		margin: 20px;
+		background: #fff url(../img/mobile/mobile-gallery.jpg) no-repeat;
+		background-size: cover;
+
+	}
+
+	.prize-content {
+		height: 1312px;
+		width: 640px;
+	}
+
+	.prize {
+		position: relative;
+		width: 640px;
+		margin: 0;
+		float: none;
+		height: 645px;
+		background: url(../img/mobile/mobile-prize.png) no-repeat 50% 50%;
+		background-size: cover;
+		z-index: 2;
+	}
+
+	.prize p {
+		display: block;
+		position: relative;
+		top: -268px;
+		left: -112px;
+		font-size: 24px;
+		line-height: 32px;
+		width: 275px;
+	}
+
+	.prize a {
+		margin: 0;
+		position: relative;
+		top: -224px;
+		left: 208px;
+	}
+
+	.block-lays {
+		margin: 0;
+		width: 640px;
+	}
+
+	.prize-lays {
+		float: left;
+		width: 470px;
+		height: 160px;
+		margin-top: 85px;
+		margin-left: 66px;
+		font-size: 57px;
+		line-height: 61px;
+	}
+
+	.img-lays {
+		display: none;
+		margin: 0;
+	}
+
+	.img-lays-mobile {
+		display: block;
+		float: right;
+		position: relative;
+		top: -55px;
+		left: -45px;
+	}
+
+	.img-lays-mobile img{
+		width: 226px;
+		height: 252px;
+	}
+
+	.balloon {
+		width: 640px;
+		margin: 0;
+		float: none;
+		height: 717px;
+		background: #fff url(../img/mobile/mobile-balloon.jpg) no-repeat 50% 50%;
+		background-size: cover;
+		z-index: 0;
+		margin-top: -48px;
+	}
+
+	.summer-lays {
+		position: static;
+		height: 717px;
+	}
+
+	.block-lays {
+		margin-top: 0px;
+	}
+
+	.summer {
+		width: 640px;
+		float: none;
+		height: 717px;
+		background: url(../img/mobile/mobile-background.png) no-repeat;
+		background-size: cover;
+		z-index: 2;
+		margin-top: -1459px;
+		position: relative;
+
+	}
+
+	.beach {
+		z-index: 0;
+		float: none;
+		width: 650px;
+		height: 717px;
+		background: #fff url(../img/mobile/mobile-beach.jpg) no-repeat;
+		background-size: cover;
+		margin-top: 688px;
+		margin-left: -10px;
+	}
+
+	/*FOOTER*/
+
+	.main-footer {
+		height: 84px;
+		width: 640px;
+	}
+
+	.logo-footer {
+		margin-top: 35px;
+		margin-left: 50px;
+	}
+
+	.logo-footer a {
+		margin-right: 0px;
+		display: none;
+	}
+
+	.copypast {
+		display: none;
+	}
+
+	.copypast-mobile {
+		display: inline;
+		color: #fff;
+		opacity: 0.7;
+	}
+
+	.social-item,
+	.social-item img{
+		width: 90px;
+		height: 84px;
+	}
+
 }
 
-.prize-content {
-	height: 636px;
-}
-
-.prize {
-	width: 775px;
-	margin-left: 48px;
-	height: 636px;
-}
-
-.balloon {
-	width: 626px;
-	height: 636px;
-}
-
-.summer {
-	width: 669px;
-	height: 636px;
-}
-
-.beach {
-	margin-left: 90px;
-	width: 685px;
-	height: 636px;
-}
-
-/*FOOTER*/
-
-.main-footer {
-	height: 89px;
-}
-
-.logo-footer {
-	margin-top: 15px;
-}
-
-.logo-footer a {
-	margin-right: 10px;
-}
-
-.social-item {
-	width: 89px;
-	height: 89px;
-}
-
-
-}
+.redlays {
+		color: #f73934;
+	}

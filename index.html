@@ -6,6 +6,9 @@
 	<link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/isInViewport.min.js"></script>
+	<script src="js/main.js"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -14,36 +17,58 @@
 				<a href="#"><img src="img/LOGO.png"></a>
 				<p>#летосLays</p>
 			</div>
-			<div class="menu gallery">
+			<label for="mobile-menu" class="mobile-menu-label"></label>
+			<input type="checkbox" class="mobile-menu" id="mobile-menu">
+			<div class="menu gallery clearfix">
 				<a href="#"><img src="img/insta.png"></a>
-				<p>Галерея</p>
+				<p class="menu-description">Галерея</p>
 			</div>
-			<div class="menu about-project">
+			<div class="menu about-project clearfix">
 				<a href="#"><img src="img/prize.png"></a>
-				<p>О проекте</p>
+				<p class="menu-description">О проекте</p>
 			</div>
-			<div class="menu infolays">
+			<div class="menu infolays clearfix">
 				<a href="#"><img src="img/map.png"></a>
-				<p>Лето с Lay's</p>
+				<p class="menu-description">Лето с Lay's</p>
 			</div>
 		</header>
+
 		<main class="main-content">
 
 			<div class="content-header">
-				<div class="item">
 
+				<div class="content-menu">
+					<div class="item">
+						<div class="image-link">
+							<a href="#"><img src="img/photo.png" width="59" height="62" alt="photo" class="image-photo"></a>
+						</div>
+						<p class="content-header-p">Загружай фото с хэштегом <span class="redlays">#летоLays</span></p>
+					</div>
+					<div class="item">
+						<div class="image-link">
+							<a href="#"><img src="img/heart.png" width="67" height="62" alt="photo" class="image-heart"></a>
+						</div>
+						<p class="content-header-p">Собирай лайки</p>
+					</div>
+					<div class="item">
+						<div class="image-link">
+							<a href="#"><img src="img/prize-menu.png" width="63" height="68" alt="photo" class="image-prize"></a>
+						</div>
+						<p class="content-header-p">Выигрывай призы</p>
+					</div>
 				</div>
-				<div class="item">
-
-				</div>
-				<div class="item">
-
+				<div class="hashtag">
+					<span class="summer-bold">ЛЕТО</span><br> <span class="summer-light">вкуснее<br> с</span>  <span class="summer-bold">Lay's</span>
 				</div>
 			</div>
 
 			<div class="gallery-content clearfix">
 				<div class="gallery-info">
-
+					<div class="gallery-text">
+						<h2 class="load-lays">Загружай<br> фото<br> с хэштегом</h2>
+						<div class="laystag">#летоcLays</div>
+					</div>
+					<a href="#">Галерея</a>
 				</div>
 
 				<div class="gallery-photo">
@@ -52,26 +77,35 @@
 			</div>
 
 			<div class="prize-content clearfix">
+				<div class="prize">
+					<div class="block-lays clearfix">
+						<div class="img-lays"><img src="img/salt_pack_1.png"></div>
+						<div class="prize-lays">Выиграй призы от Lay's</div>
+						<div class="img-lays-mobile"><img src="img/salt_pack_1.png"></div>
+					</div>
 
+					<p>Этим летом брэнд Lay's задает тренд<br> на яркое, вкусное лето и на позитивный жёлтый цвет.</p>
 
-				<div class="balloon">
-
+					<a href="#">О проекте</a>
 				</div>
 
-				<div class="prize">
-
+				<div class="balloon">
+					<div class="balloon-image"></div>
 				</div>
 			</div>
 
 			<div class="summer-lays clearfix">
 
-
 				<div class="beach">
-
+					<div class="beach-image"></div>
 				</div>
 				
 				<div class="summer">
-
+					<div class="summer-content">
+						<img src="img/lays-map.png">
+						<h2>Лето с Lay's</h2>
+						<a href="#">Перейти</a>
+					</div>
 				</div>
 			</div>
 
@@ -80,15 +114,20 @@
 				<div class="logo-footer">
 					<a href="#"><img src="img/LOGO.png" width="67" height="60"></a>
 					<p class="copypast"> © 2015 Lay's Russia. Все права защищены</p>
+					<p class="copypast-mobile"> © 2015 Lay's Russia</p>
 				</div>
 				<div class="social">
 					<div class="social-item">
+						<a href="#"><img src="img/facebook.png" width="102" height="100"></a>
 					</div>
 					<div class="social-item">
+						<a href="#"><img src="img/vk.png" width="102" height="100"></a>
 					</div>
 					<div class="social-item">
+						<a href="#"><img src="img/hz-chto-eto.png" width="102" height="100"></a>
 					</div>
 					<div class="social-item">
+						<a href="#"><img src="img/youtube.png" width="100" height="100"></a>
 					</div>
 				</div>
 			</footer>
