@@ -92,19 +92,19 @@ body {
 @keyframes move {
 	from { transform: translateX(150px);
 		opacity: 0.2;
-	 }
+	}
 	to { transform: translateX(0px);
 		opacity: 1;
-	 }
 	}
+}
 
 @keyframes move-out {
-		from { transform: translateX(-150px);
+	from { transform: translateX(-150px);
 		opacity: 0.2;
-	 }
+	}
 	to { transform: translateX(0px);
 		opacity: 1;
-	 }
+	}
 }
 
 .main-content {
@@ -172,16 +172,51 @@ body {
 	position: absolute;
 }
 
+@keyframes visible {
+	from { opacity: 0;
+	}
+	to { 
+		opacity: 1;
+	}
+}
+
 .item {
 	width: 150px;
 	height: 230px;
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 32px;
+	opacity: 0;
+}
+
+.animate-item-1 {
+	animation: 0.5s visible;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+}
+
+.animate-item-2 {
+	animation: 0.5s visible;
+	animation-delay: 4s;
+	animation-fill-mode: forwards;
+}
+
+.animate-item-3 {
+	animation: 0.5s visible;
+	animation-delay: 5s;
+	animation-fill-mode: forwards;
 }
 
 .item:last-child {
 	margin-right: 0;
+}
+
+@keyframes enlargement {
+	from { transform: scale(0.5);
+	}
+	to { 
+		transform: scale(1);
+	}
 }
 
 .image-link {
@@ -190,6 +225,24 @@ body {
 	background-color: #fff;
 	margin: 0 auto;
 	border-radius: 50%;
+}
+
+.animate-link-1 {
+	animation: 1s enlargement;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+}
+
+.animate-link-2 {
+	animation: 1s enlargement;
+	animation-delay: 4s;
+	animation-fill-mode: forwards;
+}
+
+.animate-link-3 {
+	animation: 1s enlargement;
+	animation-delay: 5s;
+	animation-fill-mode: forwards;
 }
 
 .image-link a {
@@ -362,11 +415,11 @@ body {
 }
 
 .animation-move-out {
-		animation: move-out 2s;
+	animation: move-out 2s;
 }
 
 .animation-move {
-		animation: move 2s;
+	animation: move 2s;
 }
 
 
@@ -799,33 +852,33 @@ body {
 
 	@keyframes menu-animation-1 {
 		from { transform: translateX(-50px);
-		opacity: 0.5;
-	 }
-	to { transform: translateX(0px);
-		opacity: 1;
-	 }
+			opacity: 0.5;
+		}
+		to { transform: translateX(0px);
+			opacity: 1;
+		}
 	}
 
-		@keyframes menu-animation-2 {
+	@keyframes menu-animation-2 {
 		from { transform: translateX(50px);
-		opacity: 0.5;
-	 }
-	to { transform: translateX(0px);
-		opacity: 1;
-	 }
+			opacity: 0.5;
+		}
+		to { transform: translateX(0px);
+			opacity: 1;
+		}
 	}
 
 	@keyframes menu-animation-out-1 {
 		from { transform: translateX(0px);
-		opacity: 1;
-	 }
-	90% { transform: translateX(-50px);
-		opacity: 0;
-	 }
+			opacity: 1;
+		}
+		90% { transform: translateX(-50px);
+			opacity: 0;
+		}
 
-	 to {
-	 	display: none;
-	 }
+		to {
+			display: none;
+		}
 	}
 
 	.gallery {
@@ -1139,5 +1192,5 @@ body {
 }
 
 .redlays {
-		color: #f73934;
-	}
+	color: #f73934;
+}
