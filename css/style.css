@@ -49,6 +49,16 @@ body {
 	z-index:20;
 }
 
+.main-header::before {
+	content: "";
+	position: absolute;
+	z-index: 19;
+	height: 100%;
+	width: 3000px;
+	left: -3000px;
+	background: #fff;
+}
+
 .logo,
 .menu {
 	cursor: pointer;
